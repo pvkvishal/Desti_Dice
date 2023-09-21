@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎲Dice-Game Welcome Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="login-form">
+      <div class="text">Enter Names</div>
+      <form action="./page.html">
+        <div class="field">
+          <div
+            class="fas fa-gamepad"
+            style="font-size: 24px; color: rgb(49, 126, 156)"
+          ></div>
+          <input
+            type="text"
+            placeholder="Player 1"
+            name="player1"
+            id="player1"
+            minlength="3"
+            maxlength="12"
+            value="Player 1"
+          />
+        </div>
+        <div class="field">
+          <div
+            class="fas fa-gamepad"
+            style="font-size: 24px; color: rgb(220, 88, 88)"
+          ></div>
+          <input
+            type="text"
+            placeholder="Player 2"
+            name="player2"
+            id="player2"
+            minlength="3"
+            maxlength="12"
+            value="Player 2"
+          />
+        </div>
+        <button type="submit" onclick="onefunc()" id="loadpage">
+          Start Game
+        </button>
+        <!-- <button type="submit" id="loadpage">
+          <a href="./page.html">Start Game</a>
+        </button> -->
+        <div class="link">
+          Need Help?
+          <a href="./help.html">click here</a>
+        </div>
+      </form>
+    </div>
+    <!-- partial -->
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
